@@ -4,6 +4,12 @@
 
 ---
 
+![Plate XLVI — The Rose: A Study in Form, Structure & LiDAR Scan Analysis](./images/lidar-botanical-rose-plate.jpg)
+
+*Plate XLVI. The Rose — Classical botanical illustration meets modern LiDAR point cloud. The integration of 19th-century scientific illustration and 3D spatial sensing reveals both the aesthetic beauty and the precise geometry of nature. LiDAR scan metrics: 2,842,176 points captured at 0.8 mm resolution, ±1.2 mm accuracy, 16-channel sensor, 360° scan angle.*
+
+---
+
 ## What is LiDAR?
 
 **LiDAR** (Light Detection and Ranging) is a sensing technology that measures distances by illuminating a target with laser light and measuring the reflected pulses. The result: a **3D point cloud** — a digital twin of the physical world with millimeter-level accuracy.
