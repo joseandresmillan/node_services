@@ -62,6 +62,50 @@ Automatizar el monitoreo diario de cultivos de rosas mediante el sistema VineCam
 
 ---
 
+
+
+---
+
+## ⚡ ¿Por qué Edge AI? Las Cinco Ventajas sobre la Nube
+
+Este sistema está diseñado desde cero para **inferencia en el borde** — todo el procesamiento de IA ocurre localmente en la Raspberry Pi 5 + Hailo-8L, no en la nube. He aquí por qué esto importa en el campo:
+
+### 1. Sin necesidad de internet
+
+Las fincas de rosas en Cayambe están a 2,800 metros sobre el nivel del mar. La cobertura 4G es irregular en el mejor de los casos. Edge AI procesa cada imagen localmente — **cero dependencia de conectividad**. El sistema funciona haya señal celular o no.
+
+### 2. Decisiones en tiempo real
+
+Una rosa lista para cosecha tiene una **ventana óptima de corte de 24 horas**. Los viajes de ida y vuelta a la nube añaden segundos de latencia por imagen. La inferencia Edge en el Hailo-8L corre a **30 FPS** — la decisión ocurre en la cámara, no en un centro de datos a 5,000 km de distancia.
+
+### 3. Soberanía de datos
+
+Las imágenes de cultivos nunca salen de la finca. Sin costos de almacenamiento en la nube. Sin preocupaciones de privacidad. Sin riesgo de que datos agrícolas propietarios sean expuestos o monetizados. **El agricultor es dueño de sus datos, siempre.**
+
+### 4. Costo a escala
+
+| Enfoque | Costo mensual (4 cámaras, diario) |
+|---|---|
+| API en la nube (GPT-4V / Replicate) | ~$200–400/mes |
+| **Edge AI (RPi5 + Hailo-8L)** | **$0/mes** después de la compra del hardware |
+
+El acelerador Hailo-8L cuesta ~$70. Junto con una Raspberry Pi 5 (~$80), el servidor de inferencia completo cuesta **menos de $200 por única vez**, con cero tarifas recurrentes.
+
+### 5. Eficiencia energética
+
+| Dispositivo | Rendimiento | Consumo |
+|---|---|---|
+| Hailo-8L | 13 TOPS | **5W** |
+| NVIDIA Jetson Nano | 0.5 TOPS | 5–10W |
+| GPU en la nube (A100) | 312 TOPS | 300W (por solicitud) |
+
+El Hailo-8L ofrece **26× más TOPS-por-vatio** que un Jetson Nano. Puede funcionar 24/7 con un pequeño panel solar — crítico para despliegues agrícolas remotos.
+
+### Bonus: La ventaja 10BASE-T1S
+
+El sistema VineCam utiliza un solo bus de par trenzado para datos y alimentación. Un solo cable se extiende en cadena a través del campo. Sin switches Ethernet. Sin puntos de acceso WiFi. Sin repetidores. Esta es infraestructura diseñada para **condiciones agrícolas reales**, no para salas de servidores climatizadas.
+
+
 ## 🔌 Conexión 10BASE-T1S
 
 ### ¿Por qué 10BASE-T1S?
