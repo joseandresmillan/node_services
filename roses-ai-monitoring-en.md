@@ -62,6 +62,50 @@ Automate daily rose crop monitoring using the Hellbender VineCam system — 11.9
 
 ---
 
+
+
+---
+
+## ⚡ Why Edge AI? The Five Advantages Over Cloud
+
+This system is designed from the ground up for **edge inference** — all AI processing happens locally on the Raspberry Pi 5 + Hailo-8L, not in the cloud. Here's why that matters in the field:
+
+### 1. No Internet Required
+
+Rose farms in Cayambe sit at 2,800 meters above sea level. 4G coverage is unreliable at best. Edge AI processes every image locally — **zero dependency on connectivity**. The system works whether there's a cell signal or not.
+
+### 2. Real-Time Decisions
+
+A rose ready for harvest has a **24-hour optimal cutting window**. Cloud round-trips add seconds of latency per image. Edge inference on the Hailo-8L runs at **30 FPS** — the decision happens at the camera, not in a data center 5,000 km away.
+
+### 3. Data Sovereignty
+
+Crop images never leave the farm. No cloud storage costs. No privacy concerns. No risk of proprietary agricultural data being exposed or monetized. **The farmer owns the data, always.**
+
+### 4. Cost at Scale
+
+| Approach | Monthly cost (4 cameras, daily) |
+|---|---|
+| Cloud API (GPT-4V / Replicate) | ~$200–400/month |
+| **Edge AI (RPi5 + Hailo-8L)** | **$0/month** after hardware purchase |
+
+The Hailo-8L accelerator costs ~$70. Paired with a Raspberry Pi 5 (~$80), the entire inference server is **under $200 one-time**, with zero recurring fees.
+
+### 5. Power Efficiency
+
+| Device | Performance | Power draw |
+|---|---|---|
+| Hailo-8L | 13 TOPS | **5W** |
+| NVIDIA Jetson Nano | 0.5 TOPS | 5–10W |
+| Cloud GPU (A100) | 312 TOPS | 300W (per request) |
+
+The Hailo-8L delivers **26× the TOPS-per-watt** of a Jetson Nano. It can run 24/7 on a small solar panel — critical for remote agricultural deployments.
+
+### Bonus: The 10BASE-T1S Advantage
+
+The VineCam system uses a single twisted-pair bus for both data and power. One cable daisy-chains across the field. No Ethernet switches. No Wi-Fi access points. No repeaters. This is infrastructure designed for **real-world agricultural conditions**, not climate-controlled server rooms.
+
+
 ## 🔌 10BASE-T1S Connection
 
 ### Why 10BASE-T1S?
